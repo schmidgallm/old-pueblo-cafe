@@ -8,19 +8,19 @@ import Logo from './logo.png';
 
 const Navbar = () => {
   return (
-    <nav class='navbar navbar-expand-lg navbar-dark bg-primary'>
+    <nav className='navbar navbar-expand-lg navbar-dark bg-primary'>
       <div className='container'>
         <NavLink to='/' className='navbar-brand'>
           <img
             src={Logo}
             width='250'
-            class='d-inline-block align-top'
+            className='d-inline-block align-top'
             alt='old pueblo cafe logo'
             loading='lazy'
           />
         </NavLink>
         <button
-          class='navbar-toggler'
+          className='navbar-toggler'
           type='button'
           data-toggle='collapse'
           data-target='#navbarNav'
@@ -28,11 +28,11 @@ const Navbar = () => {
           aria-expanded='false'
           aria-label='Toggle navigation'
         >
-          <span class='navbar-toggler-icon'></span>
+          <span className='navbar-toggler-icon'></span>
         </button>
-        <div class='collapse navbar-collapse' id='navbarNav'>
-          <ul class='navbar-nav ml-auto'>
-            <li class='nav-item'>
+        <div className='collapse navbar-collapse' id='navbarNav'>
+          <ul className='navbar-nav ml-auto'>
+            <li className='nav-item'>
               <NavLink to='/menu' className='nav-link'>
                 Menu
               </NavLink>

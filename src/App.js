@@ -3,6 +3,7 @@ import React, { Fragment } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 // Components
+import Wrapper from './components/Layout/Wrapper';
 import Navbar from './components/Layout/Navbar';
 import Landing from './components/Pages/Landing';
 import Menu from './components/Pages/Menu';
@@ -16,16 +17,16 @@ function App() {
     <Router>
       <Fragment>
         <Navbar />
-        <Route exact path='/' component={Landing} />
-        <div className='wrapper'>
+        <Wrapper>
           <Switch>
+            <Route exact path='/' component={Landing} />
             <Route exact path='/menu' component={Menu} />
             <Route exact path='/entertainment' component={Entertainment} />
             <Route exact path='/events' component={Events} />
             <Route exact path='/photos' component={Photos} />
             <Route exact path='/contact' component={Contact} />
           </Switch>
-        </div>
+        </Wrapper>
       </Fragment>
     </Router>
   );

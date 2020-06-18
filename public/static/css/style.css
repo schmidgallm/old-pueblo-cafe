@@ -1,3 +1,12 @@
+/* Root Variables */
+:root {
+  --primary: #fd8d51;
+  --secondary: #85d8d6;
+  --tertiary: #f7e092;
+  --accentPrimary: #fd8d51;
+  --accentSeconday: #8f7485;
+}
+
 * {
   margin: 0;
   padding: 0;

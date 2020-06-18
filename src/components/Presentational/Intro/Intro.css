@@ -1,0 +1,25 @@
+.intro {
+  padding: 100px 0;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+.intro h2 {
+  color: var(--primary);
+  margin-bottom: 30px;
+  display: inline-block;
+  border-bottom: 1px solid var(--secondary);
+  font-family: 'Josefin Slab', serif;
+  font-size: 3rem;
+}
+
+.intro .content {
+  margin: 20px auto;
+  box-shadow: 2px 2px 5px #2e2e2e;
+  padding: 15px;
+  min-height: 270px;
+}
+
+.intro .content-title {
+  padding: 20px 0;
+}
