@@ -1,25 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// Dependecies
+import React, { Fragment } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+// Components
+import Navbar from './components/Layout/Navbar';
+import Landing from './components/Pages/Landing';
+import Menu from './components/Pages/Menu';
+import Entertainment from './components/Pages/Entertainment';
+import Events from './components/Pages/Events';
+import Photos from './components/Pages/Photos';
+import Contact from './components/Pages/Contact';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Fragment>
+        <Navbar />
+        <Route exact path='/' component={Landing} />
+        <div className='wrapper'>
+          <Switch>
+            <Route exact path='/menu' component={Menu} />
+            <Route exact path='/entertainment' component={Entertainment} />
+            <Route exact path='/events' component={Events} />
+            <Route exact path='/photos' component={Photos} />
+            <Route exact path='/contact' component={Contact} />
+          </Switch>
+        </div>
+      </Fragment>
+    </Router>
   );
 }
 

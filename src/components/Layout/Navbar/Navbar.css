@@ -1,0 +1,26 @@
+.navbar {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.nav-wrapper {
+  min-height: auto;
+}
+
+.link-wrapper {
+  margin: 0 75px;
+}
+
+.nav-wrapper img {
+  height: 40px;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
