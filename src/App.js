@@ -11,13 +11,14 @@ import Entertainment from './components/Pages/Entertainment';
 import Events from './components/Pages/Events';
 import Photos from './components/Pages/Photos';
 import Contact from './components/Pages/Contact';
+import Footer from './components/Layout/Footer';
 
 function App() {
   return (
     <Router>
       <Fragment>
-        <Navbar />
         <Wrapper>
+          <Navbar />
           <Switch>
             <Route exact path='/' component={Landing} />
             <Route exact path='/menu' component={Menu} />
@@ -26,6 +27,7 @@ function App() {
             <Route exact path='/photos' component={Photos} />
             <Route exact path='/contact' component={Contact} />
           </Switch>
+          <Footer />
         </Wrapper>
       </Fragment>
     </Router>

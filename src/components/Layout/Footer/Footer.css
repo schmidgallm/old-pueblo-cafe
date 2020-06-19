@@ -1,0 +1,46 @@
+.footer {
+  padding: 100px 0;
+  color: #fff;
+  position: relative;
+}
+
+.footer .row {
+  margin-left: 30px;
+}
+
+#copyright {
+  font-size: 8px;
+}
+
+.footer img {
+  width: 75%;
+  margin-bottom: 10px;
+}
+.footer h5 {
+  color: var(--primary);
+  display: inline-block;
+  border-bottom: 1px solid var(--secondary);
+}
+
+.footer p {
+  margin: 5px 0;
+  font-size: 20px;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.social > div {
+  margin: 5px 0;
+}
+
+.social i {
+  margin-right: 10px;
+  font-size: 30px;
+  color: var(--secondary);
+}
+
+.social a {
+  font-size: 20px;
+}
