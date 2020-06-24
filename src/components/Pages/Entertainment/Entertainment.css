@@ -35,3 +35,30 @@
   font-size: 20px;
   margin: 20px auto;
 }
+
+@media (max-width: 940px) {
+  .ent-body {
+    display: block;
+  }
+
+  .ent-header {
+    margin-top: 50px;
+  }
+
+  .ent-body {
+    margin: 0;
+  }
+
+  .ent-header h1 {
+    border: none;
+    font-size: 30px;
+  }
+
+  .ent-band {
+    margin-top: 20px;
+  }
+
+  .band-img {
+    margin: 0;
+  }
+}
