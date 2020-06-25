@@ -1,0 +1,39 @@
+.menu-page {
+  margin: 75px auto;
+  text-align: center;
+}
+
+.menu-page h1 {
+  font-family: 'Josefin Slab', serif;
+  color: var(--primary);
+  display: inline-block;
+  border-bottom: 1px solid var(--secondary);
+  margin-bottom: 15px;
+}
+
+.menu-icon {
+  font-size: 20px;
+}
+
+.menu-icon span:hover {
+  cursor: pointer;
+}
+
+.menu-img img {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.lunch {
+  display: none;
+}
+
+@media (max-width: 940px) {
+  .menu-page {
+    margin-top: 20px;
+  }
+  .menu-img img {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
